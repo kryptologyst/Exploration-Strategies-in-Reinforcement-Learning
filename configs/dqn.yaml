@@ -1,0 +1,20 @@
+exploration:
+  strategy_name: "epsilon_greedy"
+  epsilon: 1.0
+  epsilon_decay: 0.995
+  epsilon_min: 0.01
+
+agent:
+  agent_type: "dqn"
+  dqn_learning_rate: 0.001
+  dqn_hidden_size: 128
+  dqn_num_layers: 2
+
+training:
+  env_name: "CartPole-v1"
+  num_episodes: 2000
+  max_steps_per_episode: 500
+  eval_frequency: 100
+  num_eval_episodes: 10
+  seed: 42
+  output_dir: "outputs"

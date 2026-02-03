@@ -1,0 +1,19 @@
+exploration:
+  strategy_name: "epsilon_greedy"
+  epsilon: 1.0
+  epsilon_decay: 0.995
+  epsilon_min: 0.01
+
+agent:
+  agent_type: "tabular"
+  learning_rate: 0.1
+  discount_factor: 0.99
+
+training:
+  env_name: "CartPole-v1"
+  num_episodes: 1000
+  max_steps_per_episode: 500
+  eval_frequency: 100
+  num_eval_episodes: 10
+  seed: 42
+  output_dir: "outputs"
